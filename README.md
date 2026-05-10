@@ -1,4 +1,4 @@
-# Navier_Stokes_Fourier_3D_Data_Generator
+<img width="741" height="380" alt="Screenshot 2026-05-10 at 14 19 29" src="https://github.com/user-attachments/assets/2be8ce47-c3ac-466d-adaa-a73cb7cc2f9e" /># Navier_Stokes_Fourier_3D_Data_Generator
 This Tool performs data generation for 3D Navier-Stokes-Fourier models of thermo-fluids. It is a pseudo-spectral solver that compute differentiation in Fourier space and non-linear products in physical space. It can simulate the fluid in a wide range of behaviours such as thermal diffusion, wave propagation and vortex formation. 
 
 <img width="500" height="417" alt="Screen Recording 2026-03-08 at 22 47 27" src="https://github.com/user-attachments/assets/5d0afb0b-4094-4ed2-b7e4-8123d93d2f74" />
@@ -10,9 +10,9 @@ The output of a simulator run is a 5D tensor organized in the following way [c, 
 
 <img width="741" height="380" alt="Screenshot 2026-05-10 at 14 18 28" src="https://github.com/user-attachments/assets/7af3fdbf-83ae-4d55-8710-1f4caab865d2" />
 
-The physical fields can be initialized with various spatial distribution such as unifotm, gaussian or random and the external force field can be selected among three different fields, "ABC" indicates the Arnold-Beltrami-Childress field type, "radial" that resembles a central force field and "axial" that is useful to simulate system with injection of angular momentum.
+The physical fields can be initialized with various spatial distribution such as unifotm, gaussian or random and the external force field can be selected among three different fields, "ABC" indicates the Arnold-Beltrami-Childress field type, "radial" that resembles a central force field and "axial" that is useful to simulate system with injection of angular momentum. It is also possible to add an external heat field to add a source of thermal energy.
 
-
+![Uploading Screenshot 2026-05-10 at 14.19.29.png…]()
 
 # Super Resolution U-Net
 
