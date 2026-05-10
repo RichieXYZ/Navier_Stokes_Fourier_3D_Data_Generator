@@ -21,6 +21,8 @@ hierarchical multiscale volumetric features from a field frame using 3D convolut
 The decoder progressively reconstructs fine-scale volumetric structure through learned upsampling and 3D convolutions while concatenating encoder features via skip connections, preserving localized spatial correlations and mitigating information loss.  
 
 The final stage employs a PixelShuffle3D operation, which rearranges feature channels into higher spatial resolution in three dimensions. Rather than interpolating in physical space, PixelShuffle3D performs a learned sub-voxel convolution, increasing resolution by redistributing channel-wise feature representations into spatial coordinates along each axis.  
-This structured channel-to-space reorganization reduces artifacts commonly associated with transposed convolutions and provides stable, high-quality volumetric upscaling.
+This structured channel-to-space reorganization reduces artifacts commonly associated with transposed convolutions and provides stable, high-quality volumetric upscaling.  
+
+<img width="726" height="389" alt="Screenshot 2026-05-10 at 14 28 07" src="https://github.com/user-attachments/assets/42d4ae88-0825-431d-97d3-60e4cf338ce5" />
 
 # Equations
