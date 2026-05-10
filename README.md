@@ -6,9 +6,7 @@ This Tool performs data generation for 3D Navier-Stokes-Fourier models of thermo
 
 # 5D Dataset
 
-The output of a simulator run is a 5D tensor organized in the following way
-
-
+The output of a simulator run is a 5D tensor organized in the following way [c, t, x, y, z], where "c" indicates the number of channels corresponding to the physical variables: velocity, temperature, pressure and density. The symbol "t" indicates the time frame dimenstion while "x,y,z" the spatial location on a uniform 3D spatial grid.
 
 
 # Super Resolution U-Net
