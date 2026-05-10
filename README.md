@@ -23,6 +23,14 @@ The decoder progressively reconstructs fine-scale volumetric structure through l
 The final stage employs a PixelShuffle3D operation, which rearranges feature channels into higher spatial resolution in three dimensions. Rather than interpolating in physical space, PixelShuffle3D performs a learned sub-voxel convolution, increasing resolution by redistributing channel-wise feature representations into spatial coordinates along each axis.  
 This structured channel-to-space reorganization reduces artifacts commonly associated with transposed convolutions and provides stable, high-quality volumetric upscaling.  
 
-<img width="726" height="389" alt="Screenshot 2026-05-10 at 14 28 07" src="https://github.com/user-attachments/assets/42d4ae88-0825-431d-97d3-60e4cf338ce5" />
+<img width="726" height="389" alt="Screenshot 2026-05-10 at 14 28 07" src="https://github.com/user-attachments/assets/42d4ae88-0825-431d-97d3-60e4cf338ce5" />  
+
+U-Net3D Training Strategy:
+
+Since generation of actual high-resolution frames is highly expensive, the SR module is trained using synthetically generated correlated three-dimensional Gaussian random fields (GRFs). Samples are generated spectrally for randomly chosen different values of specral decay parameters and phases, then, to increase structural richness and introduce non-Gaussian correlations, a nonlinear transformation is applied.
+This procedure produces spatially correlated, non-Gaussian volumetric fields with multi-scale interactions.
+
+<img width="726" height="522" alt="Screenshot 2026-05-10 at 14 35 11" src="https://github.com/user-attachments/assets/79236c50-5aba-4361-9cae-3ddd75ffac21" />
+
 
 # Equations
