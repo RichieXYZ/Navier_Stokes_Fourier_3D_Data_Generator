@@ -5,7 +5,7 @@ This Tool performs data generation for 3D Navier-Stokes-Fourier models of thermo
 
 The idea behind pseudo-spectral solvers is that any sufficiently smooth function can be represented as a truncated Fourier series, where the truncation occurs at the highest resolved wavenumber that is proportional to the half of spatial resolution according to the Nyquist limit.  
 
-$u(\mathbf{x},t) = \Sum_\mathbf{k} \hat{u}_\mathbf{k}(t)e^{i\mathbf{k}\cdot \mathbf{x}}$
+$u(\mathbf{x},t) = \sum_\mathbf{k} \hat{u}_\mathbf{k}(t)e^{i\mathbf{k}\cdot \mathbf{x}}$
 
 
 # 5D Dataset
