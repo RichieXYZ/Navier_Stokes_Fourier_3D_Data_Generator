@@ -56,7 +56,11 @@ Momentum Conservation:
 $\partial_t (\rho \mathbf{u}) + \nabla \cdot (\rho \mathbf{u} \otimes \mathbf{u}) = \nabla \cdot \boldsymbol{\tau} + \rho \mathbf{f}$  
 
 Energy Conservation:  
-$\partial_t (\rho E) +\nabla \cdot \big(\rho E\mathbf{u}\big) = \nabla \cdot(\boldsymbol{\tau}\mathbf{u}) - \nabla \cdot \mathbf{q} + \rho \mathbf{f}\cdot\mathbf{u}$
+$\partial_t (\rho E) +\nabla \cdot \big(\rho E\mathbf{u}\big) = \nabla \cdot(\boldsymbol{\tau}\mathbf{u}) - \nabla \cdot \mathbf{q} + \rho \mathbf{f}\cdot\mathbf{u}$  
+
+Where $\boldsymbol{\tau}$ indicates the total stress tensor that contains the sum of pressure components and the viscous part that depends on the gradient and divergence of the velocity field, and represent the surface forces acting on a control surface.  
+
+$\boldsymbol{\tau} = - p \mathbf{I} + \boldsymbol{\tau}^{visc}(\mathbf{u}, \nabla \mathbf{u})$
 
 
 
