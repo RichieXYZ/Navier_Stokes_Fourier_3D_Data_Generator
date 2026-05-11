@@ -62,9 +62,10 @@ Where $\boldsymbol{\tau}$ indicates the total stress tensor that contains the su
 
 $\boldsymbol{\tau} = - p \mathbf{I} + \boldsymbol{\tau}^{visc}(\mathbf{u}, \nabla \mathbf{u})$  
 
-$``\boldsymbol{\tau}^{visc} = \mu\begin{bmatrix}{2 \frac{\partial u_x}{\partial x} -\frac{1}{3}\nabla \cdot \mathbf{u}} & \frac{\partial u_x{\partial y} + \frac{\partial u_y}{\partial x} & \frac{\partial u_x}{\partial z} + \frac{\partial u_z}{\partial x}\\
+$``\boldsymbol{\tau}^{visc} = \mu\begin{bmatrix}
+{2 \frac{\partial u_x}{\partial x} -\frac{1}{3}\nabla \cdot \mathbf{u}} & \frac{\partial u_x}{\partial y} + \frac{\partial u_y}{\partial x} & \frac{\partial u_x}{\partial z} + \frac{\partial u_z}{\partial x}\\
 \frac{\partial u_x}{\partial y} + \frac{\partial u_y}{\partial x} & 2 \frac{\partial u_y}{\partial y} -\frac{1}{3}\nabla \cdot \mathbf{u} & \frac{\partial u_y}{\partial z} + \frac{\partial u_z}{\partial y}\\
-\frac{\partial u_x}{\partial z} + \frac{\partial u_z}{\partial x} & \frac{\partial u_y}{\partial z} + \frac{\partial u_z}{\partial y} & 2 \frac{\partial u_z}{\partial z} -\frac{1}{3}\nabla \cdot \mathbf{u}\\ 
+\frac{\partial u_x}{\partial z} + \frac{\partial u_z}{\partial x} & \frac{\partial u_y}{\partial z} + \frac{\partial u_z}{\partial y} & 2 \frac{\partial u_z}{\partial z} -\frac{1}{3}\nabla \cdot \mathbf{u}\\
 \end{bmatrix}``$
 
 
