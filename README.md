@@ -3,7 +3,7 @@ This Tool performs data generation for 3D Navier-Stokes-Fourier models of thermo
 
 <img width="500" height="417" alt="Screen Recording 2026-03-08 at 22 47 27" src="https://github.com/user-attachments/assets/5d0afb0b-4094-4ed2-b7e4-8123d93d2f74" />  
 
-The idea behind pseudo-spectral solvers is that any sufficiently smooth function can be represented as a truncated Fourier series, where the truncation occurs at the highest resolved wavenumber that is proportional to the half of spatial resolution according to the Nyquist limit.  
+Although finite difference methods are more flexible for complex geometries and boundary conditions, spectral methods are particularly efficient and accurate in periodic domains. The idea behind pseudo-spectral solvers is that any sufficiently smooth function can be represented as a truncated Fourier series, where the truncation occurs at the highest resolved wavenumber that is proportional to the half of spatial resolution according to the Nyquist limit.  
 
 $u(\mathbf{x},t) = \sum_\mathbf{k} \hat{u}_\mathbf{k}(t)e^{i\mathbf{k}\cdot \mathbf{x}}$  
 
@@ -11,7 +11,9 @@ where $\hat{u}_\mathbf{k}$ represents the discrete Fourier transform that in pre
 
 $\hat{u}(k) = \sum_{n=0}^{N-1} u_n e^{-\frac{2\pi i}{N}kn}$
 
-This spectral representation allows to handle the differential operators directly in Fourier space as matrix mutiplication $\nabla \rightarrow i \mathbf{k}$
+This spectral representation allows to handle the differential operators directly in Fourier space as matrix mutiplication $\nabla \rightarrow i \mathbf{k}$, while the nonlinear products have to be evaluated in the physical space in order to avoid to handle complex convolutions.  
+
+The conservative form of the PDE system allow to express discretized equation as ordinary differential equations in time, in this way it's possible to use explicit Euler update for time integration.
 
 
 # 5D Dataset
