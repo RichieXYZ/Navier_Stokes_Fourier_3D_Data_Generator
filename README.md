@@ -9,7 +9,7 @@ $u(\mathbf{x},t) = \sum_\mathbf{k} \hat{u}_\mathbf{k}(t)e^{i\mathbf{k}\cdot \mat
 
 where $\hat{u}_\mathbf{k}$ represents the discrete Fourier transform that in prectice is preformed with the pytorch built-in function torch.fft.rfftn computing the Fast Fourier Transform.  
 
-$\hat{u}_\mathbf{k} = \sum_{n=0}^{N-1} u_n e^{-\frac{2\pi i}{N}kn}$
+$\hat{u}(k) = \sum_{n=0}^{N-1} u_n e^{-\frac{2\pi i}{N}kn}$
 
 
 # 5D Dataset
