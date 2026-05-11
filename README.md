@@ -39,7 +39,14 @@ This procedure produces spatially correlated, non-Gaussian volumetric fields wit
 The motion of viscous fluids is described by the Navier–Stokes equations, a system of partial differential equations that express the balance of mass and linear momentum for a Newtonian continuum. Adding the equation of total energy conservation expressed as a general version of the First Law of Thermoyinamics, consisting in the balance of energy flux, heat flux, and external forcing, together with an equation of state to link the pressure to the other physical variables, leads to the full compressible Navier-Stokes-Fourier (NSF) system. This system of equation fully describe the dynamic of a thermal-conducting fluid and the mixture of hyperbolic transport and parabolic diffusion operators entails a variety of different physical phenomena.  
 
 Mass Conservation:  
-$\frac{d}{dt} \int_{V(t)} \rho \, d\mathbf{x} = 0$
+$\frac{d}{dt} \int_{V(t)} \rho d\mathbf{x} = 0$  
+
+Newton II Law of dynamics:  
+$\frac{d}{dt} \int_{V(t)} \rho \mathbf{u}  d\mathbf{x}
+=
+\int_{V(t)} \rho \mathbf{f}  d\mathbf{x}
++
+\oint_{S(t)} \boldsymbol{\tau}\mathbf{n}  dS,$
 
 Applying Kinematic Transport Theorem and Divengence Theorem to those equation leads to the conservative system that relates the partial time derivative of the density, momentum and total energy fields to the divergence of Euler Flux and Viscous Flux, plus the source terms.
 
