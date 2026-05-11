@@ -44,7 +44,7 @@ $\frac{d}{dt} \int_{V(t)} \rho d\mathbf{x} = 0$
 Newton 2nd Law of dynamics:  
 $\frac{d}{dt} \int_{V(t)} \rho \mathbf{u}  d\mathbf{x} = \int_{V(t)} \rho \mathbf{f}  d\mathbf{x} + \oint_{S(t)} \boldsymbol{\tau}\mathbf{n}  dS$  
 
-1st Law of thermodynamics:
+1st Law of thermodynamics:  
 $\frac{d}{dt} \int_{V(t)} \rho E d\mathbf{x} = \int_{V(t)} \rho \mathbf{f}\cdot\mathbf{u} d\mathbf{x} + \oint_{S(t)} \boldsymbol{\tau}\mathbf{n}\cdot\mathbf{u} dS - \oint_{S(t)} \mathbf{q}\cdot\mathbf{n} dS.$
 
 Applying Kinematic Transport Theorem and Divengence Theorem to those equation leads to the conservative system that relates the partial time derivative of the density, momentum and total energy fields to the divergence of Euler Flux and Viscous Flux, plus the source terms.  
@@ -52,7 +52,7 @@ Applying Kinematic Transport Theorem and Divengence Theorem to those equation le
 Continuity Equation:  
 $\partial_t \rho + \nabla \cdot (\rho \mathbf{u}) = 0$  
 
-Momentum Conservation:
+Momentum Conservation:  
 $\partial_t (\rho \mathbf{u}) + \nabla \cdot (\rho \mathbf{u} \otimes \mathbf{u}) = \nabla \cdot \boldsymbol{\tau} + \rho \mathbf{f}$  
 
 Energy Conservation:  
