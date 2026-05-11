@@ -41,12 +41,22 @@ The motion of viscous fluids is described by the Navier–Stokes equations, a sy
 Mass Conservation:  
 $\frac{d}{dt} \int_{V(t)} \rho d\mathbf{x} = 0$  
 
-Newton II Law of dynamics:  
-$\frac{d}{dt} \int_{V(t)} \rho \mathbf{u}  d\mathbf{x} = \int_{V(t)} \rho \mathbf{f}  d\mathbf{x} + \oint_{S(t)} \boldsymbol{\tau}\mathbf{n}  dS$
+Newton 2nd Law of dynamics:  
+$\frac{d}{dt} \int_{V(t)} \rho \mathbf{u}  d\mathbf{x} = \int_{V(t)} \rho \mathbf{f}  d\mathbf{x} + \oint_{S(t)} \boldsymbol{\tau}\mathbf{n}  dS$  
 
-Applying Kinematic Transport Theorem and Divengence Theorem to those equation leads to the conservative system that relates the partial time derivative of the density, momentum and total energy fields to the divergence of Euler Flux and Viscous Flux, plus the source terms.
+1st Law of thermodynamics:
+$\frac{d}{dt} \int_{V(t)} \rho E d\mathbf{x} = \int_{V(t)} \rho \mathbf{f}\cdot\mathbf{u} d\mathbf{x} + \oint_{S(t)} \boldsymbol{\tau}\mathbf{n}\cdot\mathbf{u} dS - \oint_{S(t)} \mathbf{q}\cdot\mathbf{n} dS.$
 
-<img width="683" height="191" alt="Screenshot 2026-05-10 at 15 30 03" src="https://github.com/user-attachments/assets/6b77f9c7-ee87-4b20-8666-1dd0c87df57e" />  
+Applying Kinematic Transport Theorem and Divengence Theorem to those equation leads to the conservative system that relates the partial time derivative of the density, momentum and total energy fields to the divergence of Euler Flux and Viscous Flux, plus the source terms.  
+
+Continuity Equation:  
+$\partial_t \rho + \nabla \cdot (\rho \mathbf{u}) = 0$  
+
+Momentum Conservation:
+$\partial_t (\rho \mathbf{u}) + \nabla \cdot (\rho \mathbf{u} \otimes \mathbf{u}) = \nabla \cdot \boldsymbol{\tau} + \rho \mathbf{f}$  
+
+Energy Conservation:  
+$\partial_t (\rho E) +\nabla \cdot \big(\rho E\mathbf{u}\big) = \nabla \cdot(\boldsymbol{\tau}\mathbf{u}) - \nabla \cdot \mathbf{q} + \rho \mathbf{f}\cdot\mathbf{u}$
 
 
 
