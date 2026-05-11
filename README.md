@@ -60,7 +60,13 @@ $\partial_t (\rho E) +\nabla \cdot \big(\rho E\mathbf{u}\big) = \nabla \cdot(\bo
 
 Where $\boldsymbol{\tau}$ indicates the total stress tensor that contains the sum of pressure components and the viscous part that depends on the gradient and divergence of the velocity field, and represent the surface forces acting on a control surface.  
 
-$\boldsymbol{\tau} = - p \mathbf{I} + \boldsymbol{\tau}^{visc}(\mathbf{u}, \nabla \mathbf{u})$
+$\boldsymbol{\tau} = - p \mathbf{I} + \boldsymbol{\tau}^{visc}(\mathbf{u}, \nabla \mathbf{u})$  
+
+$\boldsymbol{\tau}^{visc} = \mu\begin{bmatrix}
+{2 \frac{\partial u_x}{\partial x} -\frac{1}{3}\nabla \cdot \mathbf{u}} & \frac{\partial u_x}{\partial y} + \frac{\partial u_y}{\partial x} & \frac{\partial u_x}{\partial z} + \frac{\partial u_z}{\partial x}\\
+\frac{\partial u_x}{\partial y} + \frac{\partial u_y}{\partial x} & 2 \frac{\partial u_y}{\partial y} -\frac{1}{3}\nabla \cdot \mathbf{u} & \frac{\partial u_y}{\partial z} + \frac{\partial u_z}{\partial y}\\
+\frac{\partial u_x}{\partial z} + \frac{\partial u_z}{\partial x} & \frac{\partial u_y}{\partial z} + \frac{\partial u_z}{\partial y} & 2 \frac{\partial u_z}{\partial z} -\frac{1}{3}\nabla \cdot \mathbf{u}\\
+\end{bmatrix}$
 
 
 
