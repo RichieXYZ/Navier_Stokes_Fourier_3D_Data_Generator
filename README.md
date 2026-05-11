@@ -11,6 +11,8 @@ where $\hat{u}_\mathbf{k}$ represents the discrete Fourier transform that in pre
 
 $\hat{u}(k) = \sum_{n=0}^{N-1} u_n e^{-\frac{2\pi i}{N}kn}$
 
+This spectral representation allows to handle the differential operators directly in Fourier space as matrix mutiplication $\nabla \rightarrow i \mathbf{k}$
+
 
 # 5D Dataset
 
