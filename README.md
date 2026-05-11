@@ -68,7 +68,9 @@ $``\boldsymbol{\tau}^{visc} = \mu\begin{bmatrix}
 \frac{\partial u_x}{\partial z} + \frac{\partial u_z}{\partial x} & \frac{\partial u_y}{\partial z} + \frac{\partial u_z}{\partial y} & 2 \frac{\partial u_z}{\partial z} -\frac{1}{3}\nabla \cdot \mathbf{u}\\
 \end{bmatrix}``$  
 
-The complete system can be written in a compact form by defining the conservative vector $\mathbf{q} = [\rho, \rho\mathbf{u}, \rhe E]$
+The complete system can be written in a compact form by defining the conservative vector $\mathbf{q} = [\rho, \rho\mathbf{u}, \rho E]$, the total flux $\Phi = \Phi_E - \Phi_V$ and the source term as $\mathbf{S} = \rho[0, \rho \mathbf{f}, \mathbf{f}\cdot\mathbf{u} - Q]$, obtaining:  
+
+$\boxed{\partial_t \mathbf{q} + \nabla \cdot \Phi(\mathbf{q},\nabla \mathbf{q}) = \mathbf{S}}$
 
 
 
