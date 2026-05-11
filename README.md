@@ -36,9 +36,10 @@ This procedure produces spatially correlated, non-Gaussian volumetric fields wit
 
 # Equations  
 
-The motion of viscous fluids is described by the Navier–Stokes equations, a system of partial differential equations that express the balance of mass and linear momentum for a Newtonian continuum. Adding the equation of total energy conservation expressed as a general version of the First Law of Thermoyinamics, consisting in the balance of energy flux, heat flux, and external forcing, together with an equation of state to link the pressure to the other physical variables, leads to the full compressible Navier-Stokes-Fourier (NSF) system. This system of equation fully describe the dynamic of a thermal-conducting fluid and the mixture of hyperbolic transport and parabolic diffusion operators entails a variety of different physical phenomena.
+The motion of viscous fluids is described by the Navier–Stokes equations, a system of partial differential equations that express the balance of mass and linear momentum for a Newtonian continuum. Adding the equation of total energy conservation expressed as a general version of the First Law of Thermoyinamics, consisting in the balance of energy flux, heat flux, and external forcing, together with an equation of state to link the pressure to the other physical variables, leads to the full compressible Navier-Stokes-Fourier (NSF) system. This system of equation fully describe the dynamic of a thermal-conducting fluid and the mixture of hyperbolic transport and parabolic diffusion operators entails a variety of different physical phenomena.  
 
-<img width="742" height="254" alt="Screenshot 2026-05-10 at 15 26 37" src="https://github.com/user-attachments/assets/ac6bd2b9-50ed-4e63-8422-4fb5abede768" />
+Mass Conservation:  
+$\frac{d}{dt} \int_{V(t)} \rho \, d\mathbf{x} = 0$
 
 Applying Kinematic Transport Theorem and Divengence Theorem to those equation leads to the conservative system that relates the partial time derivative of the density, momentum and total energy fields to the divergence of Euler Flux and Viscous Flux, plus the source terms.
 
