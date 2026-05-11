@@ -15,7 +15,22 @@ This spectral representation allows to handle the differential operators directl
 
 The conservative form of the PDE system allow to express discretized equation as ordinary differential equations in time, in this way it's possible to use explicit Euler update for time integration.  
 
-$\hat{u}_{n+1} = \hat{u}_n + \Delta t \mathcal{R}(\hat{u}_n)$
+$\hat{u}_{n+1} = \hat{u}_n + \Delta t \mathcal{R}(\hat{u}_n)$  
+
+<img width="721" height="416" alt="Screenshot 2026-05-11 at 15 20 33" src="https://github.com/user-attachments/assets/72d6ed73-e527-4cd6-87fa-459e14021b4e" />
+
+The overall operation of the simulation algorithm can be broken down in the following steps:  
+
+1. Initialization
+
+|-Loop:  
+|- 2. Computation of Euler Flux  
+|- 3. Computation of Stress Tensor  
+|- 4. Computation of Viscous Flux  
+|- 5. Divergence of Total Flux  
+|- 6. Field Update  
+
+7. Output
 
 
 # 5D Dataset
