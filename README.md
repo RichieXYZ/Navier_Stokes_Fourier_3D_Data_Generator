@@ -13,7 +13,9 @@ $\hat{u}(k) = \sum_{n=0}^{N-1} u_n e^{-\frac{2\pi i}{N}kn}$
 
 This spectral representation allows to handle the differential operators directly in Fourier space as matrix mutiplication $\nabla \rightarrow i \mathbf{k}$, while the nonlinear products have to be evaluated in the physical space in order to avoid to handle complex convolutions.  
 
-The conservative form of the PDE system allow to express discretized equation as ordinary differential equations in time, in this way it's possible to use explicit Euler update for time integration.
+The conservative form of the PDE system allow to express discretized equation as ordinary differential equations in time, in this way it's possible to use explicit Euler update for time integration.  
+
+$\hat{u}_{n+1} = \hat{u}_n + \Delta t \mathcal{R}(\hat{u}_n)$
 
 
 # 5D Dataset
