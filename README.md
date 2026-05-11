@@ -80,7 +80,7 @@ $``\Phi_E =
     0 \\
     \boldsymbol{\tau}^{\mathrm{visc}} \\
     \boldsymbol{\tau}^{\mathrm{visc}}\mathbf{u} - \mathbf{\theta}
-    \end{pmatrix}``$
+    \end{pmatrix}``$  
 where H indicates the total enthaply and $\theta = -k\nabla T$ is the heat flux term according to Fourier law of heat conduction. The Consevative matrix form of the equation is thus:  
 
 $\boxed{\partial_t \mathbf{q} + \nabla \cdot \Phi(\mathbf{q},\nabla \mathbf{q}) = \mathbf{S}}$
