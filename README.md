@@ -5,7 +5,11 @@ This Tool performs data generation for 3D Navier-Stokes-Fourier models of thermo
 
 The idea behind pseudo-spectral solvers is that any sufficiently smooth function can be represented as a truncated Fourier series, where the truncation occurs at the highest resolved wavenumber that is proportional to the half of spatial resolution according to the Nyquist limit.  
 
-$u(\mathbf{x},t) = \sum_\mathbf{k} \hat{u}_\mathbf{k}(t)e^{i\mathbf{k}\cdot \mathbf{x}}$
+$u(\mathbf{x},t) = \sum_\mathbf{k} \hat{u}_\mathbf{k}(t)e^{i\mathbf{k}\cdot \mathbf{x}}$  
+
+where $\hat{u}_\mathbf{k}$ represents the discrete Fourier transform that in prectice is preformed with the pytorch built-in function torch.fft.rfftn computing the Fast Fourier Transform.  
+
+$\hat{u}_\mathbf{k} = \sum_{n=0}^{N-1} u_n e^{-\frac{2\pi i}{N}kn}$
 
 
 # 5D Dataset
