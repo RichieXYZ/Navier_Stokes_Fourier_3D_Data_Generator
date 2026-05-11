@@ -75,14 +75,13 @@ $``\Phi_E =
     \rho \mathbf{u} \\
     \rho \mathbf{u}\otimes\mathbf{u} + p\mathbf{I} \\
     \rho H \mathbf{u}
-    \end{pmatrix}``$ and $``\Phi_V =
+    \end{pmatrix}``$ , $``\Phi_V =
     \begin{pmatrix}
     0 \\
     \boldsymbol{\tau}^{\mathrm{visc}} \\
     \boldsymbol{\tau}^{\mathrm{visc}}\mathbf{u} - \mathbf{\theta}
     \end{pmatrix}``$
-
-obtaining:  
+where H indicates the total enthaply and $\theta = -k\nabla T$ is the heat flux term according to Fourier law of heat conduction. The Consevative matrix form of the equation is thus:  
 
 $\boxed{\partial_t \mathbf{q} + \nabla \cdot \Phi(\mathbf{q},\nabla \mathbf{q}) = \mathbf{S}}$
 
