@@ -75,7 +75,12 @@ $``\Phi_E =
     \rho \mathbf{u} \\
     \rho \mathbf{u}\otimes\mathbf{u} + p\mathbf{I} \\
     \rho H \mathbf{u}
-    \end{pmatrix}``$  
+    \end{pmatrix}``$ and $``\Phi_V =
+    \begin{pmatrix}
+    0 \\
+    \boldsymbol{\tau}^{\mathrm{visc}} \\
+    \boldsymbol{\tau}^{\mathrm{visc}}\mathbf{u} - \mathbf{\theta}
+    \end{pmatrix}``$
 
 obtaining:  
 
